@@ -1,0 +1,8 @@
+1.	Order all employees on the basis of the salary they drew.
+SELECT * FROM employee_data ORDER BY salary;
+2.	List all employees in descending order of their years of service.
+SELECT * FROM employee_data ORDER BY yos DESC;
+3.	What does the following statement display?
+Select emp_id, l_name, title, age from employee_data order by title desc, age asc;
+4.	Display employees (last names followed by first names) who hold the title of either “Programmer” or “Web Designer” and sort their last names alphabetically.
+SELECT CONCAT(l_name, ', ', f_name) AS full_name FROM employee_data WHERE title IN ('Programmer', 'Web Designer') ORDER BY l_name ASC;
