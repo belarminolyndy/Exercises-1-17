@@ -1,0 +1,21 @@
+1.Write a complete SQL statement for creating a new database called addressbook
+create database addressbook;
+2.Which statement is used to list the information about a table? How do you use this statement?
+Use the describe 
+describe employee_data;
+3. How would you list all the databases available on the system?
+show databases;
+4. Write the statement for inserting the following data in employee data table
+insert into employee_data(f_name, l_name, title, age, yos, salary, perks, email)
+values('Rudolf', 'Reindeer', 'Business Analyst', 34, 2,95000, 17000, 'rudolf@bugnet.com');
+5. Give two form of the SELECT statement that will list all the data in employee_data table.
+select*from employee_data;
+select emp_id, f_name, l_name, title, age, yos, salary, perks, email from employee_data;
+6. What will select f_name, email from employee_data; display?
+select f_name, email from employee_data;
+7. Write the statement for listing data from salary, perks, and yos columns of employee_data table.
+select salary, perks, yos from employee_data;
+8.How can you find the number of rows in a table using the SELECT statement?
+select count(*) from employee_data;
+9.What will select salary, l_name from employee_data; display?
+select salary, l_name from employee_data;
