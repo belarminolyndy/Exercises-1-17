@@ -1,0 +1,10 @@
+1.	Count the number of employees who have been with Bignet for four or more years.
+SELECT COUNT(*) AS employees_4plus_years FROM employee_data WHERE yos >= 4;
+2.	Count employees based on their ages. 
+SELECT age, COUNT(*) AS count_of_employees FROM employee_data GROUP BY age;
+3.	Modify the above so that the ages are listed in the descending order. 
+SELECT age, COUNT(*) AS count_of_employees FROM employee_data GROUP BY age ORDER BY age DESC;
+4.	Find the average age of employees in different departments(title).
+SELECT title, AVG(age) AS average_age FROM employee_data GROUP BY title;
+5.	Change the above statement so that the data is displayed in a descending order of average ages.
+SELECT title, AVG(age) AS average_age FROM employee_data GROUP BY title ORDER BY average_age DESC;
